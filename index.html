@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffe74b">
+  <title>Buon compleanno, Na!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="decorations" aria-hidden="true">
+    <div class="balloon balloon--pink"></div>
+    <div class="balloon balloon--blue"></div>
+    <div class="balloon balloon--green"></div>
+    <div class="balloon balloon--orange"></div>
+    <span class="star star--one">✦</span><span class="star star--two">✦</span>
+    <span class="star star--three">✦</span><span class="star star--four">✦</span>
+    <span class="squiggle squiggle--one"></span><span class="squiggle squiggle--two"></span>
+  </div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <main>
+    <section class="landing" id="landing">
+      <div class="gift" aria-hidden="true"><span class="gift__bow"></span><span class="gift__lid"></span></div>
+      <button class="button button--start" id="start" type="button">Clicca qui, Na!</button>
+    </section>
+    <section class="celebration" id="celebration" hidden>
+      <h1 id="greeting" tabindex="-1" aria-label="Buon compleanno, Na!"></h1>
+      <div class="wheel-stage" id="wheel-stage">
+        <div class="wheel-shell" id="wheel-shell">
+          <div class="pointer" id="pointer" aria-hidden="true"></div>
+          <svg id="wheel" viewBox="0 0 520 520" role="img"></svg>
+          <span class="wheel-hub" aria-hidden="true">✦</span>
+        </div>
+        <button class="button button--spin" id="spin" type="button" disabled>GIRA E VINCI</button>
+      </div>
+      <section class="result" id="result" hidden>
+        <h2 id="win-banner" tabindex="-1">Congratulazioni, hai vinto!</h2>
+        <div class="prize-card" id="prize-card"></div>
+        <button class="button button--again" id="again" type="button">Gira ancora</button>
+      </section>
+    </section>
+    <p class="sr-only" id="status" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>
