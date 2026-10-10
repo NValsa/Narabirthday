@@ -7,13 +7,13 @@ const CONFIG = {
     start: "Skisha ki!",
     greeting: "Buon compleeeeeee!",
     spin: "GIRA E VINCI",
-    win: "CONGRATULASCIONS, hai vint un anno di Conprobio!",
+    win: "CONGRATULASCIONS, hai vint un anno di Conprobio! (I know, boscodirovo universe woulda been goat...)",
     again: "Gira ancora"
   },
   segments: [
     { label: "Conprobio", color: "#96ed69", image: "assets/conprobio.png" },
     { label: "1'000'000 .-", color: "#60d8ff" },
-    { label: "Un posto sul set delle pubblicità Instagram di Stefano Carvahlo", color: "#ff77b7" },
+    { label: "VR game in Boscodirovo universe", color: "#ff77b7" },
     { label: "Whisky il ragnetto versione K Pop", color: "#ffad59" }
   ],
   spinDuration: 6400,
